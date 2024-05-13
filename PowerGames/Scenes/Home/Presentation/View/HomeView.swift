@@ -16,17 +16,35 @@ struct HomeView: View {
             ScrollView {
                 HeaderView(userName: "Muhammed")
 
-                VStack {
-                    ForEach(viewModel.games, id: \.id) { gameData in
-                        GameListCell(data: gameData)
-                            .padding(.horizontal)
-                            .padding(.vertical, 8)
-                            .cornerRadius(20)
-                            .frame(height: geometry.size.height * 0.43)
+                ZStack(alignment: .center) {
+                    progressView
+                    VStack {
+                        ForEach(viewModel.games, id: \.id) { gameData in
+                            GameListCell(data: gameData)
+                                .padding(.horizontal)
+                                .padding(.vertical, 8)
+                                .cornerRadius(20)
+                                .frame(height: geometry.size.height * 0.43)
+                        }
                     }
                 }
-            }
-        }
+            } //: ScrollView
+        } //: GeometryReader
+        .onChange(of: viewModel.alertItem, perform: didSetAlert)
+    }
+}
+
+private extension HomeView {
+    var progressView: AnyView? {
+        guard viewModel.state == .loading else { return nil }
+        return ProgressView().eraseToAnyView()
+    }
+
+    func didSetAlert(_ alert: AlertItem?) {
+        guard let alert else { return }
+        UIApplication.shared.showAlertView(alert, completion: {
+            viewModel.alertItem = nil
+        })
     }
 }
 

@@ -9,4 +9,5 @@ import Combine
 
 class BaseViewModel: DisposableObject {
     @Published var state: ViewModelState = .idle
+    @Published var alertItem: AlertItem?
 }

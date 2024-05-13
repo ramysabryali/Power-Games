@@ -32,10 +32,13 @@ private extension HomeViewModel {
     @MainActor
     func loadGames() {
         Task {
+            state = .loading
+
             do {
                 games = try await useCase.execute()
+                state = .successful
             } catch {
-                print(error.localizedDescription)
+                alertItem = .init(message: error.localizedDescription)
             }
         }
     }

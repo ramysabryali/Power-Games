@@ -40,6 +40,10 @@
 		DC6F4EC92BF2C08900260850 /* GameListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4EC82BF2C08900260850 /* GameListCell.swift */; };
 		DC6F4ECC2BF2C0CA00260850 /* AsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4ECB2BF2C0CA00260850 /* AsyncImage.swift */; };
 		DC6F4ECE2BF2C51700260850 /* GiveawayGameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4ECD2BF2C51700260850 /* GiveawayGameData.swift */; };
+		DC6F4ED02BF2C84100260850 /* View+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4ECF2BF2C84100260850 /* View+Helpers.swift */; };
+		DC6F4ED42BF2CAA900260850 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4ED32BF2CAA900260850 /* AlertItem.swift */; };
+		DC6F4ED62BF2CAFE00260850 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4ED52BF2CAFE00260850 /* AlertAction.swift */; };
+		DC6F4ED82BF2CBB300260850 /* UIApplication+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4ED72BF2CBB300260850 /* UIApplication+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,10 @@
 		DC6F4EC82BF2C08900260850 /* GameListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListCell.swift; sourceTree = "<group>"; };
 		DC6F4ECB2BF2C0CA00260850 /* AsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImage.swift; sourceTree = "<group>"; };
 		DC6F4ECD2BF2C51700260850 /* GiveawayGameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayGameData.swift; sourceTree = "<group>"; };
+		DC6F4ECF2BF2C84100260850 /* View+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Helpers.swift"; sourceTree = "<group>"; };
+		DC6F4ED32BF2CAA900260850 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		DC6F4ED52BF2CAFE00260850 /* AlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
+		DC6F4ED72BF2CBB300260850 /* UIApplication+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Helpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +320,8 @@
 			isa = PBXGroup;
 			children = (
 				DC6F4E8C2BF2960000260850 /* String+Helpers.swift */,
+				DC6F4ECF2BF2C84100260850 /* View+Helpers.swift */,
+				DC6F4ED72BF2CBB300260850 /* UIApplication+Helpers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -447,9 +457,27 @@
 		DC6F4ECA2BF2C0B300260850 /* ReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
-				DC6F4ECB2BF2C0CA00260850 /* AsyncImage.swift */,
+				DC6F4ED22BF2CA9C00260850 /* Alert */,
+				DC6F4ED12BF2CA9100260850 /* AsyncImage */,
 			);
 			path = ReusableComponents;
+			sourceTree = "<group>";
+		};
+		DC6F4ED12BF2CA9100260850 /* AsyncImage */ = {
+			isa = PBXGroup;
+			children = (
+				DC6F4ECB2BF2C0CA00260850 /* AsyncImage.swift */,
+			);
+			path = AsyncImage;
+			sourceTree = "<group>";
+		};
+		DC6F4ED22BF2CA9C00260850 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				DC6F4ED32BF2CAA900260850 /* AlertItem.swift */,
+				DC6F4ED52BF2CAFE00260850 /* AlertAction.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,18 +616,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6F4ED62BF2CAFE00260850 /* AlertAction.swift in Sources */,
 				DC6F4EB52BF2B12400260850 /* HomeViewModel.swift in Sources */,
 				DC6F4EB82BF2B14200260850 /* BaseViewModel.swift in Sources */,
 				DC6F4EA72BF298E700260850 /* GiveawaysResponse.swift in Sources */,
 				DC6F4EB32BF2B0EC00260850 /* HeaderView.swift in Sources */,
 				DC6F4EA32BF2986000260850 /* HomeRemoteServiceContract.swift in Sources */,
 				DC6F4E922BF2967E00260850 /* HTTPHeaders.swift in Sources */,
+				DC6F4ED02BF2C84100260850 /* View+Helpers.swift in Sources */,
+				DC6F4ED82BF2CBB300260850 /* UIApplication+Helpers.swift in Sources */,
 				DC6F4EBE2BF2B19600260850 /* ViewModelState.swift in Sources */,
 				DC6F4EBB2BF2B16C00260850 /* DisposableObject.swift in Sources */,
 				DC6F4E872BF294E200260850 /* NetworkConstants.swift in Sources */,
 				DC6F4EC92BF2C08900260850 /* GameListCell.swift in Sources */,
 				DC6F4E892BF2952D00260850 /* APIConstants.swift in Sources */,
 				DC6F4EB02BF2AF7500260850 /* HomeView.swift in Sources */,
+				DC6F4ED42BF2CAA900260850 /* AlertItem.swift in Sources */,
 				DC6F4E902BF2966A00260850 /* HTTPMethod.swift in Sources */,
 				DC6F4E8D2BF2960000260850 /* String+Helpers.swift in Sources */,
 				DC6F4ECE2BF2C51700260850 /* GiveawayGameData.swift in Sources */,
