@@ -11,7 +11,7 @@ import SwiftUI
 struct PowerGamesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
