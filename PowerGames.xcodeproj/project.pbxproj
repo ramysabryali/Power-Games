@@ -94,9 +94,10 @@
 		DC6F4E4A2BF28D1700260850 /* PowerGames */ = {
 			isa = PBXGroup;
 			children = (
-				DC6F4E4B2BF28D1700260850 /* PowerGamesApp.swift */,
 				DC6F4E4D2BF28D1700260850 /* ContentView.swift */,
-				DC6F4E4F2BF28D1800260850 /* Assets.xcassets */,
+				DC6F4E772BF28F5200260850 /* Application */,
+				DC6F4E762BF28F4C00260850 /* Utilities */,
+				DC6F4E752BF28F3C00260850 /* Resources */,
 				DC6F4E512BF28D1800260850 /* Preview Content */,
 			);
 			path = PowerGames;
@@ -125,6 +126,29 @@
 				DC6F4E682BF28D1800260850 /* PowerGamesUITestsLaunchTests.swift */,
 			);
 			path = PowerGamesUITests;
+			sourceTree = "<group>";
+		};
+		DC6F4E752BF28F3C00260850 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC6F4E4F2BF28D1800260850 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC6F4E762BF28F4C00260850 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DC6F4E772BF28F5200260850 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DC6F4E4B2BF28D1700260850 /* PowerGamesApp.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
