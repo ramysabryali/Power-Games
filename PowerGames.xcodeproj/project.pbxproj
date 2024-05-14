@@ -20,6 +20,7 @@
 		DC4848582BF3AC76006B2EE5 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848572BF3AC76006B2EE5 /* HomeRouter.swift */; };
 		DC48485E2BF3AF5C006B2EE5 /* GiveawayDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48485D2BF3AF5C006B2EE5 /* GiveawayDetailsViewModel.swift */; };
 		DC4848602BF3AF68006B2EE5 /* GiveawayDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48485F2BF3AF68006B2EE5 /* GiveawayDetailsView.swift */; };
+		DC4848642BF40F8E006B2EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4848632BF40F8E006B2EE5 /* LaunchScreen.storyboard */; };
 		DC6F4E502BF28D1800260850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E4F2BF28D1800260850 /* Assets.xcassets */; };
 		DC6F4E532BF28D1800260850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */; };
 		DC6F4E5D2BF28D1800260850 /* PowerGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E5C2BF28D1800260850 /* PowerGamesTests.swift */; };
@@ -91,7 +92,8 @@
 		DC4848572BF3AC76006B2EE5 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		DC48485D2BF3AF5C006B2EE5 /* GiveawayDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDetailsViewModel.swift; sourceTree = "<group>"; };
 		DC48485F2BF3AF68006B2EE5 /* GiveawayDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDetailsView.swift; sourceTree = "<group>"; };
-		DC6F4E482BF28D1700260850 /* PowerGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4848632BF40F8E006B2EE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC6F4E482BF28D1700260850 /* Power Games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Games.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F4E4F2BF28D1800260850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC6F4E582BF28D1800260850 /* PowerGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -260,7 +262,7 @@
 		DC6F4E492BF28D1700260850 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC6F4E482BF28D1700260850 /* PowerGames.app */,
+				DC6F4E482BF28D1700260850 /* Power Games.app */,
 				DC6F4E582BF28D1800260850 /* PowerGamesTests.xctest */,
 				DC6F4E622BF28D1800260850 /* PowerGamesUITests.xctest */,
 			);
@@ -330,6 +332,7 @@
 			children = (
 				DC4848522BF3A282006B2EE5 /* AppDelegate.swift */,
 				DC4848552BF3A80E006B2EE5 /* SceneDelegate.swift */,
+				DC4848632BF40F8E006B2EE5 /* LaunchScreen.storyboard */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -629,7 +632,7 @@
 				DC6F4EC62BF2B60800260850 /* Kingfisher */,
 			);
 			productName = PowerGames;
-			productReference = DC6F4E482BF28D1700260850 /* PowerGames.app */;
+			productReference = DC6F4E482BF28D1700260850 /* Power Games.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DC6F4E572BF28D1800260850 /* PowerGamesTests */ = {
@@ -719,6 +722,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4848642BF40F8E006B2EE5 /* LaunchScreen.storyboard in Resources */,
 				DC6F4E532BF28D1800260850 /* Preview Assets.xcassets in Resources */,
 				DC6F4E502BF28D1800260850 /* Assets.xcassets in Resources */,
 			);
@@ -958,6 +962,7 @@
 				INFOPLIST_FILE = Configurations/PList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -967,7 +972,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramysabry1996.PowerGames;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Power Games";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -988,6 +993,7 @@
 				INFOPLIST_FILE = Configurations/PList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -997,7 +1003,7 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ramysabry1996.PowerGames;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Power Games";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
