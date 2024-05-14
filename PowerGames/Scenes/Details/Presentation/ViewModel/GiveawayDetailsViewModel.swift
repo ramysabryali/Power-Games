@@ -9,14 +9,18 @@ import Foundation
 
 final class GiveawayDetailsViewModel: BaseViewModel, ObservableObject {
     private let router: HomeRouterProtocol
+    private var onComplete: ((_ isFavorite: Bool) -> ())?
+
     @Published private var data: GiveawayGameData
 
     init(
         router: HomeRouterProtocol = HomeRouter.shared,
-        data: GiveawayGameData
+        data: GiveawayGameData,
+        onComplete: ((_ isFavorite: Bool) -> ())?
     ) {
         self.router = router
         self.data = data
+        self.onComplete = onComplete
     }
 }
 
@@ -46,7 +50,7 @@ extension GiveawayDetailsViewModel {
     var platform: String {
         data.platforms ?? "N/A"
     }
-    
+
     var users: String {
         guard let users = data.users else { return "N/A" }
         return "\(users)"
@@ -75,6 +79,7 @@ extension GiveawayDetailsViewModel {
 
 extension GiveawayDetailsViewModel {
     func onPressBack() {
+        onComplete?(isFavorite)
         router.pop(animated: true)
     }
 

@@ -8,14 +8,14 @@
 import Foundation
 
 protocol HomeRouterProtocol: Router {
-    func openGameDetailsView(using data: GiveawayGameData)
+    func openGameDetailsView(using data: GiveawayGameData, onComplete: ((_ isFavorite: Bool) -> ())?)
 }
 
 final class HomeRouter: HomeRouterProtocol {
     static let shared = HomeRouter()
 
-    func openGameDetailsView(using data: GiveawayGameData) {
-        let viewModel = GiveawayDetailsViewModel(data: data)
+    func openGameDetailsView(using data: GiveawayGameData, onComplete: ((_ isFavorite: Bool) -> ())?) {
+        let viewModel = GiveawayDetailsViewModel(data: data, onComplete: onComplete)
         let view = GiveawayDetailsView(viewModel: viewModel)
         push(view: view)
     }

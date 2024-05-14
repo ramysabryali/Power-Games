@@ -106,31 +106,31 @@ private extension GiveawayDetailsView {
             VStack {
                 Image("dollar-symbol")
                     .resizable()
-                    .frame(width: 38, height: 38)
+                    .frame(width: 35, height: 35)
                     .scaledToFit()
 
                 Text(viewModel.price)
-                    .font(.system(size: 18, weight: .bold))
+                    .font(.system(size: 16, weight: .bold))
             }
             Spacer()
             VStack {
                 Image("users")
                     .resizable()
-                    .frame(width: 38, height: 38)
+                    .frame(width: 35, height: 35)
                     .scaledToFit()
 
                 Text(viewModel.users)
-                    .font(.system(size: 18, weight: .bold))
+                    .font(.system(size: 16, weight: .bold))
             }
             Spacer()
             VStack {
                 Image("games")
                     .resizable()
-                    .frame(width: 38, height: 38)
+                    .frame(width: 35, height: 35)
                     .scaledToFit()
 
                 Text(viewModel.type)
-                    .font(.system(size: 18, weight: .bold))
+                    .font(.system(size: 16, weight: .bold))
             }
         }
         .padding(.horizontal)
@@ -171,7 +171,7 @@ private extension GiveawayDetailsView {
 #Preview {
     GiveawayDetailsView(
         viewModel: GiveawayDetailsViewModel(
-            data: GiveawayResponse.dummyData.toData
+            data: GiveawayResponse.dummyData.toData, onComplete: { _ in }
         )
     )
 }

@@ -29,7 +29,13 @@ final class HomeViewModel: BaseViewModel, ObservableObject {
 
 extension HomeViewModel {
     func onPressGame(data: GiveawayGameData) {
-        router.openGameDetailsView(using: data)
+        router.openGameDetailsView(using: data, onComplete: { isFavorite in
+            self.updateFavoriteStatus(for: data, isFavorite: isFavorite)
+        })
+    }
+
+    func onPressFavorite(data: GiveawayGameData) {
+        updateFavoriteStatus(for: data, isFavorite: !data.isFavorite)
     }
 }
 
@@ -55,5 +61,10 @@ private extension HomeViewModel {
                 alertItem = .init(message: error.localizedDescription)
             }
         }
+    }
+
+    func updateFavoriteStatus(for gameData: GiveawayGameData, isFavorite: Bool) {
+        guard let gameIndex = games.firstIndex(where: { $0.id == gameData.id }) else { return }
+        games[gameIndex].isFavorite = isFavorite
     }
 }

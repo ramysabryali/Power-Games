@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GameListCell: View {
     let data: GiveawayGameData
+    let onPressFavorite: () -> ()
 
     var body: some View {
         ZStack {
@@ -32,21 +33,12 @@ struct GameListCell: View {
 
     private var content: some View {
         VStack(alignment: .leading) {
-            VStack(alignment: .leading, spacing: 10) {
-                Text(data.title ?? "")
-                    .foregroundColor(.white)
-                    .font(.system(size: 30, weight: .bold))
-                    .multilineTextAlignment(.leading)
-
-                Text(data.platforms ?? "")
-                    .foregroundColor(.white)
-                    .font(.system(size: 14))
-                    .multilineTextAlignment(.leading)
-                    .opacity(0.6)
+            HStack(alignment: .top, spacing: 5) {
+                titleAndPlatformView
+                Spacer()
+                favoriteButtonView
             }
-
             Spacer()
-
             Text(data.description ?? "")
                 .foregroundColor(.white)
                 .font(.footnote)
@@ -54,5 +46,32 @@ struct GameListCell: View {
                 .opacity(0.8)
         }
         .padding()
+    }
+
+    private var titleAndPlatformView: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(data.title ?? "")
+                .foregroundColor(.white)
+                .font(.system(size: 30, weight: .bold))
+                .multilineTextAlignment(.leading)
+
+            Text(data.platforms ?? "")
+                .foregroundColor(.white)
+                .font(.system(size: 14))
+                .multilineTextAlignment(.leading)
+                .opacity(0.6)
+        }
+    }
+
+    private var favoriteButtonView: some View {
+        Button(action: {
+            onPressFavorite()
+        }, label: {
+            withAnimation {
+                Image(data.isFavorite ? "heart-filled" : "heart")
+                    .resizable()
+                    .frame(width: 35, height: 35)
+            }
+        })
     }
 }
