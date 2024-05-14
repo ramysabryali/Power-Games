@@ -8,5 +8,5 @@
 import Foundation
 
 protocol HomeRepositoryContract {
-    func fetchGiveWaysList() async throws -> GiveawaysListResponse
+    func fetchGiveWaysList(type: String) async throws -> GiveawaysListResponse
 }

@@ -6,12 +6,14 @@
 //
 
 import Combine
+import Foundation
 
 final class HomeViewModel: BaseViewModel, ObservableObject {
     private let router: HomeRouterProtocol
     private let useCase: FetchGivewaysGamesUseCaseContract
 
     @Published var games: [GiveawayGameData] = []
+    @Published var currentPlatform: GiveawayPlatforms = .all
 
     init(
         router: HomeRouterProtocol = HomeRouter.shared,
@@ -21,7 +23,8 @@ final class HomeViewModel: BaseViewModel, ObservableObject {
         self.useCase = useCase
 
         super.init()
-        onLoad()
+        loadData()
+        observeOnPlatformFilterChange()
     }
 }
 
@@ -42,7 +45,7 @@ extension HomeViewModel {
 // MARK: - Private Methods
 
 private extension HomeViewModel {
-    func onLoad() {
+    func loadData() {
         Task {
             await loadGames()
         }
@@ -54,7 +57,7 @@ private extension HomeViewModel {
             state = .loading
 
             do {
-                games = try await useCase.execute()
+                games = try await useCase.execute(type: currentPlatform.rawValue)
                 state = .successful
             } catch {
                 state = .failed
@@ -66,5 +69,22 @@ private extension HomeViewModel {
     func updateFavoriteStatus(for gameData: GiveawayGameData, isFavorite: Bool) {
         guard let gameIndex = games.firstIndex(where: { $0.id == gameData.id }) else { return }
         games[gameIndex].isFavorite = isFavorite
+    }
+
+    func observeOnPlatformFilterChange() {
+        $currentPlatform
+            .dropFirst()
+            .debounce(for: .milliseconds(100), scheduler: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.reloadDataWithNewPlatformFilter()
+            }
+            .store(in: &cancellables)
+    }
+
+    func reloadDataWithNewPlatformFilter() {
+        state = .loading
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.loadData()
+        }
     }
 }

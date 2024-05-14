@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct CarouselView<Content: View, Item: RandomAccessCollection>: View where Item: MutableCollection,
+typealias CarouselDataTypes = Equatable & RandomAccessCollection
+
+struct CarouselView<Content: View, Item: CarouselDataTypes>: View where Item: MutableCollection,
     Item.Element: Identifiable {
     var showsIndicator: ScrollIndicatorVisibility = .hidden
     var spacing: CGFloat
@@ -53,5 +55,8 @@ struct CarouselView<Content: View, Item: RandomAccessCollection>: View where Ite
         .scrollIndicators(showsIndicator)
         .scrollTargetBehavior(.viewAligned)
         .scrollPosition(id: $activeID)
+        .onChange(of: $data.wrappedValue) { _, newValue in
+            activeID = newValue.first?.id as? UUID
+        }
     }
 }

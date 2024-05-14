@@ -16,7 +16,7 @@ final class HomeRepository {
 }
 
 extension HomeRepository: HomeRepositoryContract {
-    func fetchGiveWaysList() async throws -> GiveawaysListResponse {
-        try await service.fetchGiveWaysList()
+    func fetchGiveWaysList(type: String) async throws -> GiveawaysListResponse {
+        try await service.fetchGiveWaysList(type: type)
     }
 }

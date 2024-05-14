@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GiveawayGameData: Identifiable {
+struct GiveawayGameData {
     let id: UUID
     let title: String?
     let description: String?
@@ -20,3 +20,5 @@ struct GiveawayGameData: Identifiable {
     let price: String?
     var isFavorite: Bool = false
 }
+
+extension GiveawayGameData: Equatable, Identifiable {}

@@ -16,9 +16,9 @@ final class FetchGivewaysGamesUseCase {
 }
 
 extension FetchGivewaysGamesUseCase: FetchGivewaysGamesUseCaseContract {
-    func execute() async throws -> [GiveawayGameData] {
+    func execute(type: String) async throws -> [GiveawayGameData] {
         try await repository
-            .fetchGiveWaysList()
+            .fetchGiveWaysList(type: type)
             .map(\.toData)
     }
 }

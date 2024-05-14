@@ -16,9 +16,9 @@ final class HomeRemoteService {
 }
 
 extension HomeRemoteService: HomeRemoteServiceContract {
-    func fetchGiveWaysList() async throws -> GiveawaysListResponse {
+    func fetchGiveWaysList(type: String) async throws -> GiveawaysListResponse {
         let request = APIBuilder()
-            .setPath(using: .giveawaysList)
+            .setPath(using: .giveawaysList, argument: [type])
             .setMethod(using: .get)
             .build()
 

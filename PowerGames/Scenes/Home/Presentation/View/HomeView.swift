@@ -21,6 +21,7 @@ struct HomeView: View {
                     ZStack(alignment: .center) {
                         VStack {
                             carouselView
+                            platformsFilterView
                             buildGamesList(using: geometry)
                         }
                         progressView
@@ -76,6 +77,20 @@ private extension HomeView {
             .safeAreaPadding([.horizontal], geometry.size.width * 0.13)
         }
         .frame(height: 180)
+    }
+
+    var platformsFilterView: some View {
+        PGSegmentedView(
+            items: GiveawayPlatforms.allCases,
+            selecteditem: $viewModel.currentPlatform
+        ) { item, isSelected in
+            Text(item.rawValue.lowercased())
+                .foregroundColor(isSelected ? .black : .gray)
+                .font(.system(size: 20, weight: .medium))
+        }
+        .frame(height: 50)
+//        .opacity(viewModel.games.isEmpty ? 0 : 1)
+        .disabled(viewModel.state == .loading)
     }
 }
 

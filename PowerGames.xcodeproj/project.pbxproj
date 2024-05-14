@@ -21,6 +21,8 @@
 		DC48485E2BF3AF5C006B2EE5 /* GiveawayDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48485D2BF3AF5C006B2EE5 /* GiveawayDetailsViewModel.swift */; };
 		DC4848602BF3AF68006B2EE5 /* GiveawayDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48485F2BF3AF68006B2EE5 /* GiveawayDetailsView.swift */; };
 		DC4848642BF40F8E006B2EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4848632BF40F8E006B2EE5 /* LaunchScreen.storyboard */; };
+		DC4848672BF41F63006B2EE5 /* PGSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848662BF41F63006B2EE5 /* PGSegmentedView.swift */; };
+		DC48486A2BF41F8F006B2EE5 /* GiveawayPlatforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848692BF41F8F006B2EE5 /* GiveawayPlatforms.swift */; };
 		DC6F4E502BF28D1800260850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E4F2BF28D1800260850 /* Assets.xcassets */; };
 		DC6F4E532BF28D1800260850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */; };
 		DC6F4E5D2BF28D1800260850 /* PowerGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E5C2BF28D1800260850 /* PowerGamesTests.swift */; };
@@ -93,6 +95,8 @@
 		DC48485D2BF3AF5C006B2EE5 /* GiveawayDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDetailsViewModel.swift; sourceTree = "<group>"; };
 		DC48485F2BF3AF68006B2EE5 /* GiveawayDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDetailsView.swift; sourceTree = "<group>"; };
 		DC4848632BF40F8E006B2EE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC4848662BF41F63006B2EE5 /* PGSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSegmentedView.swift; sourceTree = "<group>"; };
+		DC4848692BF41F8F006B2EE5 /* GiveawayPlatforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayPlatforms.swift; sourceTree = "<group>"; };
 		DC6F4E482BF28D1700260850 /* Power Games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Games.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F4E4F2BF28D1800260850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -248,6 +252,22 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		DC4848652BF41F54006B2EE5 /* PGSegmentedView */ = {
+			isa = PBXGroup;
+			children = (
+				DC4848662BF41F63006B2EE5 /* PGSegmentedView.swift */,
+			);
+			path = PGSegmentedView;
+			sourceTree = "<group>";
+		};
+		DC4848682BF41F82006B2EE5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DC4848692BF41F8F006B2EE5 /* GiveawayPlatforms.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DC6F4E3F2BF28D1700260850 = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +379,7 @@
 		DC6F4E7A2BF2945C00260850 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DC4848682BF41F82006B2EE5 /* Helpers */,
 				DC6F4EAE2BF2AF5B00260850 /* ViewModel */,
 				DC6F4EAD2BF2AF5800260850 /* View */,
 			);
@@ -514,7 +535,7 @@
 			isa = PBXGroup;
 			children = (
 				DC6F4EAF2BF2AF7500260850 /* HomeView.swift */,
-				DC6F4EB12BF2B0E100260850 /* Helpers */,
+				DC6F4EB12BF2B0E100260850 /* SubViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -527,14 +548,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		DC6F4EB12BF2B0E100260850 /* Helpers */ = {
+		DC6F4EB12BF2B0E100260850 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
 				DC6F4EB22BF2B0EC00260850 /* HeaderView.swift */,
 				DC48483C2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift */,
 				DC6F4EC82BF2C08900260850 /* GameListCell.swift */,
 			);
-			path = Helpers;
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		DC6F4EB62BF2B13100260850 /* Bases */ = {
@@ -580,6 +601,7 @@
 		DC6F4ECA2BF2C0B300260850 /* ReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				DC4848652BF41F54006B2EE5 /* PGSegmentedView */,
 				DC6F4F0D2BF3093B00260850 /* Carousel */,
 				DC6F4ED22BF2CA9C00260850 /* Alert */,
 				DC6F4ED12BF2CA9100260850 /* AsyncImage */,
@@ -783,12 +805,14 @@
 				DC4848562BF3A80E006B2EE5 /* SceneDelegate.swift in Sources */,
 				DC6F4E962BF296D900260850 /* ContentType.swift in Sources */,
 				DC6F4EA92BF29C8600260850 /* HomeRepository.swift in Sources */,
+				DC4848672BF41F63006B2EE5 /* PGSegmentedView.swift in Sources */,
 				DC6F4EC42BF2B23800260850 /* FetchGivewaysGamesUseCaseContract.swift in Sources */,
 				DC6F4EAC2BF29CCF00260850 /* HomeRepositoryContract.swift in Sources */,
 				DC6F4E842BF2949F00260850 /* APIBuilder.swift in Sources */,
 				DC6F4EC12BF2B21D00260850 /* FetchGivewaysGamesUseCase.swift in Sources */,
 				DC6F4E982BF2975B00260850 /* APIServiceContract.swift in Sources */,
 				DC4848582BF3AC76006B2EE5 /* HomeRouter.swift in Sources */,
+				DC48486A2BF41F8F006B2EE5 /* GiveawayPlatforms.swift in Sources */,
 				DC6F4E9D2BF297E900260850 /* HomeRemoteService.swift in Sources */,
 				DC6F4E9A2BF2977500260850 /* APIService.swift in Sources */,
 				DC6F4ECC2BF2C0CA00260850 /* AsyncImage.swift in Sources */,
