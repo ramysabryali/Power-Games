@@ -84,7 +84,7 @@
 		DC48484C2BF3A178006B2EE5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		DC4848502BF3A1E9006B2EE5 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		DC4848522BF3A282006B2EE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC4848542BF3A7E9006B2EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DC4848542BF3A7E9006B2EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4848552BF3A80E006B2EE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC4848572BF3AC76006B2EE5 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		DC6F4E482BF28D1700260850 /* PowerGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,9 +208,26 @@
 			path = Routers;
 			sourceTree = "<group>";
 		};
+		DC4848592BF3AECF006B2EE5 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				DC48485A2BF3AED8006B2EE5 /* PList */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		DC48485A2BF3AED8006B2EE5 /* PList */ = {
+			isa = PBXGroup;
+			children = (
+				DC4848542BF3A7E9006B2EE5 /* Info.plist */,
+			);
+			path = PList;
+			sourceTree = "<group>";
+		};
 		DC6F4E3F2BF28D1700260850 = {
 			isa = PBXGroup;
 			children = (
+				DC4848592BF3AECF006B2EE5 /* Configurations */,
 				DC6F4E4A2BF28D1700260850 /* PowerGames */,
 				DC6F4E5B2BF28D1800260850 /* PowerGamesTests */,
 				DC6F4E652BF28D1800260850 /* PowerGamesUITests */,
@@ -231,7 +248,6 @@
 		DC6F4E4A2BF28D1700260850 /* PowerGames */ = {
 			isa = PBXGroup;
 			children = (
-				DC4848542BF3A7E9006B2EE5 /* Info.plist */,
 				DC6F4E782BF2944300260850 /* Scenes */,
 				DC6F4E772BF28F5200260850 /* Application */,
 				DC6F4E762BF28F4C00260850 /* Utilities */,
@@ -915,7 +931,7 @@
 				DEVELOPMENT_TEAM = MLM8YK22VB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PowerGames/Info.plist;
+				INFOPLIST_FILE = Configurations/PList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -945,7 +961,7 @@
 				DEVELOPMENT_TEAM = MLM8YK22VB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PowerGames/Info.plist;
+				INFOPLIST_FILE = Configurations/PList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
