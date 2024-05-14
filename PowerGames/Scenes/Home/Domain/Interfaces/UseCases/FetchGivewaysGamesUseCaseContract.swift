@@ -8,5 +8,5 @@
 import Foundation
 
 protocol FetchGivewaysGamesUseCaseContract {
-    func execute(type: String) async throws -> [GiveawayGameData]
+    func execute(platform: String?) async throws -> [GiveawayGameData]
 }

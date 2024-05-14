@@ -55,9 +55,9 @@ private extension HomeViewModel {
     func loadGames() {
         Task {
             state = .loading
-
+            let platform: String? = currentPlatform == .all ? nil : currentPlatform.rawValue
             do {
-                games = try await useCase.execute(type: currentPlatform.rawValue)
+                games = try await useCase.execute(platform: platform)
                 state = .successful
             } catch {
                 state = .failed

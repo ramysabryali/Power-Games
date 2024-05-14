@@ -8,5 +8,6 @@
 import Foundation
 
 enum APIConstants: String, CaseIterable {
-    case giveawaysList = "/api/giveaways?platform=%@"
+    case giveawaysList = "/api/giveaways"
+    case giveawaysListbyPlatform = "/api/giveaways?platform=%@"
 }
