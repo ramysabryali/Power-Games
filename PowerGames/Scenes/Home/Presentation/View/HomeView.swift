@@ -14,24 +14,14 @@ struct HomeView: View {
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
-                VStack(alignment: .leading, spacing: 10) {
+                VStack(alignment: .center, spacing: 10) {
                     HeaderView(userName: "Muhammed")
                         .padding(.horizontal)
-                    
-                    Text("Explore\nGames Giveaways")
-                        .font(Font.title.weight(.bold))
-                        .multilineTextAlignment(.leading)
-                        .padding(.horizontal)
-                    
+
+                    titleView
+                    progressView
                     carouselView
-                        
-                    ForEach(viewModel.games, id: \.id) { gameData in
-                        GameListCell(data: gameData)
-                            .padding(.horizontal)
-                            .padding(.vertical, 8)
-                            .cornerRadius(20)
-                            .frame(height: geometry.size.height * 0.5)
-                    }
+                    buildGamesList(using: geometry)
                 } //: VStack
             } //: ScrollView
         } //: GeometryReader
@@ -39,7 +29,21 @@ struct HomeView: View {
     }
 }
 
+// MARK: - Private Properties
+
 private extension HomeView {
+    var titleView: some View {
+        HStack {
+            Text("Explore\nGames Giveaways")
+                .frame(alignment: .leading)
+                .font(.system(size: 32, weight: .bold))
+                .multilineTextAlignment(.leading)
+                .padding(.horizontal)
+            
+            Spacer()
+        }
+    }
+
     var progressView: AnyView? {
         guard viewModel.state == .loading else { return nil }
         return ProgressView().eraseToAnyView()
@@ -65,6 +69,21 @@ private extension HomeView {
             .safeAreaPadding([.horizontal], geometry.size.width * 0.13)
         }
         .frame(height: 180)
+    }
+}
+
+// MARK: - Private Methods
+
+private extension HomeView {
+    @ViewBuilder
+    func buildGamesList(using geometry: GeometryProxy) -> some View {
+        ForEach(viewModel.games, id: \.id) { gameData in
+            GameListCell(data: gameData)
+                .padding(.horizontal)
+                .padding(.vertical, 8)
+                .cornerRadius(20)
+                .frame(height: geometry.size.height * 0.5)
+        }
     }
 
     func didSetAlert(_ alert: AlertItem?) {

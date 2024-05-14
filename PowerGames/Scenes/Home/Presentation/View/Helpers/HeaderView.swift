@@ -16,7 +16,7 @@ struct HeaderView: View {
                 Text("👋")
 
                 Text("Hello, \(userName)")
-                    .font(.headline)
+                    .font(.system(size: 18))
             }
             Spacer()
             Image("boy")

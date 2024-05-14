@@ -35,7 +35,7 @@ struct GameListCell: View {
             VStack(alignment: .leading, spacing: 10) {
                 Text(data.title ?? "")
                     .foregroundColor(.white)
-                    .font(.title2)
+                    .font(.system(size: 30, weight: .bold))
                     .multilineTextAlignment(.leading)
 
                 Text(data.platforms ?? "")
