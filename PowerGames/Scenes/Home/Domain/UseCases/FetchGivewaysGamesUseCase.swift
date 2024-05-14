@@ -19,6 +19,6 @@ extension FetchGivewaysGamesUseCase: FetchGivewaysGamesUseCaseContract {
     func execute() async throws -> [GiveawayGameData] {
         try await repository
             .fetchGiveWaysList()
-            .map(\.domainData)
+            .map(\.toData)
     }
 }

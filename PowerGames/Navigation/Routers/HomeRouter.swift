@@ -13,8 +13,10 @@ protocol HomeRouterProtocol: Router {
 
 final class HomeRouter: HomeRouterProtocol {
     static let shared = HomeRouter()
-    
+
     func openGameDetailsView(using data: GiveawayGameData) {
-        navigationController?.pushViewController(HomeView().viewController, animated: true)
+        let viewModel = GiveawayDetailsViewModel(data: data)
+        let view = GiveawayDetailsView(viewModel: viewModel)
+        push(view: view)
     }
 }

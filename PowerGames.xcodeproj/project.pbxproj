@@ -18,6 +18,8 @@
 		DC4848532BF3A282006B2EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848522BF3A282006B2EE5 /* AppDelegate.swift */; };
 		DC4848562BF3A80E006B2EE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848552BF3A80E006B2EE5 /* SceneDelegate.swift */; };
 		DC4848582BF3AC76006B2EE5 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848572BF3AC76006B2EE5 /* HomeRouter.swift */; };
+		DC48485E2BF3AF5C006B2EE5 /* GiveawayDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48485D2BF3AF5C006B2EE5 /* GiveawayDetailsViewModel.swift */; };
+		DC4848602BF3AF68006B2EE5 /* GiveawayDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48485F2BF3AF68006B2EE5 /* GiveawayDetailsView.swift */; };
 		DC6F4E502BF28D1800260850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E4F2BF28D1800260850 /* Assets.xcassets */; };
 		DC6F4E532BF28D1800260850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */; };
 		DC6F4E5D2BF28D1800260850 /* PowerGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E5C2BF28D1800260850 /* PowerGamesTests.swift */; };
@@ -87,6 +89,8 @@
 		DC4848542BF3A7E9006B2EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC4848552BF3A80E006B2EE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC4848572BF3AC76006B2EE5 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		DC48485D2BF3AF5C006B2EE5 /* GiveawayDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDetailsViewModel.swift; sourceTree = "<group>"; };
+		DC48485F2BF3AF68006B2EE5 /* GiveawayDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDetailsView.swift; sourceTree = "<group>"; };
 		DC6F4E482BF28D1700260850 /* PowerGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F4E4F2BF28D1800260850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 		DC48483F2BF3953A006B2EE5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DC48485C2BF3AF3E006B2EE5 /* ViewModel */,
+				DC48485B2BF3AF3A006B2EE5 /* View */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -222,6 +228,22 @@
 				DC4848542BF3A7E9006B2EE5 /* Info.plist */,
 			);
 			path = PList;
+			sourceTree = "<group>";
+		};
+		DC48485B2BF3AF3A006B2EE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC48485F2BF3AF68006B2EE5 /* GiveawayDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC48485C2BF3AF3E006B2EE5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC48485D2BF3AF5C006B2EE5 /* GiveawayDetailsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DC6F4E3F2BF28D1700260850 = {
@@ -725,6 +747,7 @@
 			files = (
 				DC6F4ED62BF2CAFE00260850 /* AlertAction.swift in Sources */,
 				DC6F4EB52BF2B12400260850 /* HomeViewModel.swift in Sources */,
+				DC4848602BF3AF68006B2EE5 /* GiveawayDetailsView.swift in Sources */,
 				DC48483D2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift in Sources */,
 				DC6F4EB82BF2B14200260850 /* BaseViewModel.swift in Sources */,
 				DC4848532BF3A282006B2EE5 /* AppDelegate.swift in Sources */,
@@ -749,6 +772,7 @@
 				DC6F4E902BF2966A00260850 /* HTTPMethod.swift in Sources */,
 				DC6F4E8D2BF2960000260850 /* String+Helpers.swift in Sources */,
 				DC6F4ECE2BF2C51700260850 /* GiveawayGameData.swift in Sources */,
+				DC48485E2BF3AF5C006B2EE5 /* GiveawayDetailsViewModel.swift in Sources */,
 				DC4848512BF3A1E9006B2EE5 /* MainRouter.swift in Sources */,
 				DC48484D2BF3A178006B2EE5 /* Router.swift in Sources */,
 				DC4848422BF39E72006B2EE5 /* UINavigationController+Helpers.swift in Sources */,

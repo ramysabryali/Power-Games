@@ -14,4 +14,9 @@ struct GiveawayGameData: Identifiable {
     let thumbnail: URL?
     let image: URL?
     let platforms: String?
+    let endDate: String?
+    let users: Int?
+    let type: String?
+    let price: String?
+    var isFavorite: Bool = false
 }

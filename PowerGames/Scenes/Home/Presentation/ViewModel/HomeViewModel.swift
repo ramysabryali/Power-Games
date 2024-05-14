@@ -51,6 +51,7 @@ private extension HomeViewModel {
                 games = try await useCase.execute()
                 state = .successful
             } catch {
+                state = .failed
                 alertItem = .init(message: error.localizedDescription)
             }
         }
