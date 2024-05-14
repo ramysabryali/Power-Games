@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC48483D2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48483C2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift */; };
 		DC6F4E4C2BF28D1700260850 /* PowerGamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E4B2BF28D1700260850 /* PowerGamesApp.swift */; };
 		DC6F4E502BF28D1800260850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E4F2BF28D1800260850 /* Assets.xcassets */; };
 		DC6F4E532BF28D1800260850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		DC6F4ED42BF2CAA900260850 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4ED32BF2CAA900260850 /* AlertItem.swift */; };
 		DC6F4ED62BF2CAFE00260850 /* AlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4ED52BF2CAFE00260850 /* AlertAction.swift */; };
 		DC6F4ED82BF2CBB300260850 /* UIApplication+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4ED72BF2CBB300260850 /* UIApplication+Helpers.swift */; };
+		DC6F4F0F2BF3094A00260850 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4F0E2BF3094A00260850 /* CarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC48483C2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouseCellCardView.swift; sourceTree = "<group>"; };
 		DC6F4E482BF28D1700260850 /* PowerGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F4E4B2BF28D1700260850 /* PowerGamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerGamesApp.swift; sourceTree = "<group>"; };
 		DC6F4E4F2BF28D1800260850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +106,7 @@
 		DC6F4ED32BF2CAA900260850 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		DC6F4ED52BF2CAFE00260850 /* AlertAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertAction.swift; sourceTree = "<group>"; };
 		DC6F4ED72BF2CBB300260850 /* UIApplication+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Helpers.swift"; sourceTree = "<group>"; };
+		DC6F4F0E2BF3094A00260850 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,6 +413,7 @@
 			isa = PBXGroup;
 			children = (
 				DC6F4EB22BF2B0EC00260850 /* HeaderView.swift */,
+				DC48483C2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift */,
 				DC6F4EC82BF2C08900260850 /* GameListCell.swift */,
 			);
 			path = Helpers;
@@ -457,6 +462,7 @@
 		DC6F4ECA2BF2C0B300260850 /* ReusableComponents */ = {
 			isa = PBXGroup;
 			children = (
+				DC6F4F0D2BF3093B00260850 /* Carousel */,
 				DC6F4ED22BF2CA9C00260850 /* Alert */,
 				DC6F4ED12BF2CA9100260850 /* AsyncImage */,
 			);
@@ -478,6 +484,14 @@
 				DC6F4ED52BF2CAFE00260850 /* AlertAction.swift */,
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		DC6F4F0D2BF3093B00260850 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				DC6F4F0E2BF3094A00260850 /* CarouselView.swift */,
+			);
+			path = Carousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,10 +632,12 @@
 			files = (
 				DC6F4ED62BF2CAFE00260850 /* AlertAction.swift in Sources */,
 				DC6F4EB52BF2B12400260850 /* HomeViewModel.swift in Sources */,
+				DC48483D2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift in Sources */,
 				DC6F4EB82BF2B14200260850 /* BaseViewModel.swift in Sources */,
 				DC6F4EA72BF298E700260850 /* GiveawaysResponse.swift in Sources */,
 				DC6F4EB32BF2B0EC00260850 /* HeaderView.swift in Sources */,
 				DC6F4EA32BF2986000260850 /* HomeRemoteServiceContract.swift in Sources */,
+				DC6F4F0F2BF3094A00260850 /* CarouselView.swift in Sources */,
 				DC6F4E922BF2967E00260850 /* HTTPHeaders.swift in Sources */,
 				DC6F4ED02BF2C84100260850 /* View+Helpers.swift in Sources */,
 				DC6F4ED82BF2CBB300260850 /* UIApplication+Helpers.swift in Sources */,
@@ -818,7 +834,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -848,7 +864,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

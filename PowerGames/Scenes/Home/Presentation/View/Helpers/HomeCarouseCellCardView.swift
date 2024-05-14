@@ -1,5 +1,5 @@
 //
-//  GameListCell.swift
+//  HomeCarouseCellCardView.swift
 //  PowerGames
 //
 //  Created by Ramy Sabry on 14/05/2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GameListCell: View {
+struct HomeCarouseCellCardView: View {
     let data: GiveawayGameData
 
     var body: some View {
@@ -19,7 +19,6 @@ struct GameListCell: View {
 
     private var backgroundImageView: some View {
         Rectangle()
-            .foregroundColor(.white)
             .overlay {
                 AsyncImage(
                     url: data.image,
@@ -32,24 +31,16 @@ struct GameListCell: View {
 
     private var content: some View {
         VStack(alignment: .leading) {
-            VStack(alignment: .leading, spacing: 10) {
-                Text(data.title ?? "")
-                    .foregroundColor(.white)
-                    .font(.title2)
-                    .multilineTextAlignment(.leading)
-
-                Text(data.platforms ?? "")
-                    .foregroundColor(.white)
-                    .font(.system(size: 14))
-                    .multilineTextAlignment(.leading)
-                    .opacity(0.6)
-            }
+            Text(data.title ?? "")
+                .foregroundColor(.white)
+                .font(Font.subheadline.weight(.bold))
+                .multilineTextAlignment(.leading)
 
             Spacer()
 
             Text(data.description ?? "")
                 .foregroundColor(.white)
-                .font(.footnote)
+                .font(.system(size: 12))
                 .multilineTextAlignment(.leading)
                 .opacity(0.8)
         }

@@ -40,7 +40,7 @@ struct GiveawayResponse: Decodable {
 extension GiveawayResponse {
     var domainData: GiveawayGameData {
         GiveawayGameData(
-            id: id,
+            id: UUID(),
             title: title,
             description: description,
             thumbnail: thumbnail,

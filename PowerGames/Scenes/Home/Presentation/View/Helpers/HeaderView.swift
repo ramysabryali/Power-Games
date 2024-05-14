@@ -18,14 +18,11 @@ struct HeaderView: View {
                 Text("Hello, \(userName)")
                     .font(.headline)
             }
-
             Spacer()
-
             Image("boy")
                 .resizable()
                 .frame(width: 30, height: 30)
         }
-        .padding()
     }
 }
 

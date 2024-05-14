@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct GiveawayGameData {
-    let id: Int
+struct GiveawayGameData: Identifiable {
+    let id: UUID
     let title: String?
     let description: String?
     let thumbnail: URL?
