@@ -17,11 +17,14 @@ struct HomeView: View {
                 VStack(alignment: .center, spacing: 10) {
                     HeaderView(userName: "Muhammed")
                         .padding(.horizontal)
-
                     titleView
-                    progressView
-                    carouselView
-                    buildGamesList(using: geometry)
+                    ZStack(alignment: .center) {
+                        VStack {
+                            carouselView
+                            buildGamesList(using: geometry)
+                        }
+                        progressView
+                    }
                 } //: VStack
             } //: ScrollView
         } //: GeometryReader
@@ -39,14 +42,18 @@ private extension HomeView {
                 .font(.system(size: 32, weight: .bold))
                 .multilineTextAlignment(.leading)
                 .padding(.horizontal)
-            
+
             Spacer()
         }
     }
 
     var progressView: AnyView? {
         guard viewModel.state == .loading else { return nil }
-        return ProgressView().eraseToAnyView()
+        return VStack {
+            Spacer()
+            ProgressView()
+        }
+        .eraseToAnyView()
     }
 
     var carouselView: some View {
