@@ -85,11 +85,15 @@ private extension HomeView {
     @ViewBuilder
     func buildGamesList(using geometry: GeometryProxy) -> some View {
         ForEach(viewModel.games, id: \.id) { gameData in
-            GameListCell(data: gameData)
-                .padding(.horizontal)
-                .padding(.vertical, 8)
-                .cornerRadius(20)
-                .frame(height: geometry.size.height * 0.5)
+            Button(action: {
+                viewModel.onPressGame(data: gameData)
+            }, label: {
+                GameListCell(data: gameData)
+                    .padding(.horizontal)
+                    .padding(.vertical, 8)
+                    .cornerRadius(20)
+                    .frame(height: geometry.size.height * 0.5)
+            })
         }
     }
 

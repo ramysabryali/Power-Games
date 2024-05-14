@@ -8,7 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		DC48483D2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48483C2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift */; };
-		DC6F4E4C2BF28D1700260850 /* PowerGamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E4B2BF28D1700260850 /* PowerGamesApp.swift */; };
+		DC4848422BF39E72006B2EE5 /* UINavigationController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848412BF39E72006B2EE5 /* UINavigationController+Helpers.swift */; };
+		DC4848442BF39EA3006B2EE5 /* UINavigationController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848432BF39EA3006B2EE5 /* UINavigationController+View.swift */; };
+		DC4848462BF39ED6006B2EE5 /* UINavigationController+Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848452BF39ED6006B2EE5 /* UINavigationController+Environment.swift */; };
+		DC4848492BF39F41006B2EE5 /* Array+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848482BF39F41006B2EE5 /* Array+Helpers.swift */; };
+		DC48484B2BF39F7E006B2EE5 /* PresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48484A2BF39F7E006B2EE5 /* PresentationStyle.swift */; };
+		DC48484D2BF3A178006B2EE5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48484C2BF3A178006B2EE5 /* Router.swift */; };
+		DC4848512BF3A1E9006B2EE5 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848502BF3A1E9006B2EE5 /* MainRouter.swift */; };
+		DC4848532BF3A282006B2EE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848522BF3A282006B2EE5 /* AppDelegate.swift */; };
+		DC4848562BF3A80E006B2EE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848552BF3A80E006B2EE5 /* SceneDelegate.swift */; };
+		DC4848582BF3AC76006B2EE5 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848572BF3AC76006B2EE5 /* HomeRouter.swift */; };
 		DC6F4E502BF28D1800260850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E4F2BF28D1800260850 /* Assets.xcassets */; };
 		DC6F4E532BF28D1800260850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */; };
 		DC6F4E5D2BF28D1800260850 /* PowerGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E5C2BF28D1800260850 /* PowerGamesTests.swift */; };
@@ -67,8 +76,18 @@
 
 /* Begin PBXFileReference section */
 		DC48483C2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouseCellCardView.swift; sourceTree = "<group>"; };
+		DC4848412BF39E72006B2EE5 /* UINavigationController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Helpers.swift"; sourceTree = "<group>"; };
+		DC4848432BF39EA3006B2EE5 /* UINavigationController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+View.swift"; sourceTree = "<group>"; };
+		DC4848452BF39ED6006B2EE5 /* UINavigationController+Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Environment.swift"; sourceTree = "<group>"; };
+		DC4848482BF39F41006B2EE5 /* Array+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Helpers.swift"; sourceTree = "<group>"; };
+		DC48484A2BF39F7E006B2EE5 /* PresentationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationStyle.swift; sourceTree = "<group>"; };
+		DC48484C2BF3A178006B2EE5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		DC4848502BF3A1E9006B2EE5 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		DC4848522BF3A282006B2EE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC4848542BF3A7E9006B2EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DC4848552BF3A80E006B2EE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC4848572BF3AC76006B2EE5 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		DC6F4E482BF28D1700260850 /* PowerGames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerGames.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC6F4E4B2BF28D1700260850 /* PowerGamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerGamesApp.swift; sourceTree = "<group>"; };
 		DC6F4E4F2BF28D1800260850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC6F4E582BF28D1800260850 /* PowerGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +154,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC48483E2BF39486006B2EE5 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				DC48483F2BF3953A006B2EE5 /* Presentation */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		DC48483F2BF3953A006B2EE5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DC4848402BF39E5B006B2EE5 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DC48484F2BF3A1E1006B2EE5 /* Routers */,
+				DC48484E2BF3A1DC006B2EE5 /* Core */,
+				DC4848472BF39F33006B2EE5 /* Helpers */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		DC4848472BF39F33006B2EE5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DC4848412BF39E72006B2EE5 /* UINavigationController+Helpers.swift */,
+				DC48484A2BF39F7E006B2EE5 /* PresentationStyle.swift */,
+				DC4848432BF39EA3006B2EE5 /* UINavigationController+View.swift */,
+				DC4848452BF39ED6006B2EE5 /* UINavigationController+Environment.swift */,
+				DC4848482BF39F41006B2EE5 /* Array+Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DC48484E2BF3A1DC006B2EE5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DC48484C2BF3A178006B2EE5 /* Router.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DC48484F2BF3A1E1006B2EE5 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				DC4848502BF3A1E9006B2EE5 /* MainRouter.swift */,
+				DC4848572BF3AC76006B2EE5 /* HomeRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
 		DC6F4E3F2BF28D1700260850 = {
 			isa = PBXGroup;
 			children = (
@@ -158,9 +231,11 @@
 		DC6F4E4A2BF28D1700260850 /* PowerGames */ = {
 			isa = PBXGroup;
 			children = (
+				DC4848542BF3A7E9006B2EE5 /* Info.plist */,
 				DC6F4E782BF2944300260850 /* Scenes */,
 				DC6F4E772BF28F5200260850 /* Application */,
 				DC6F4E762BF28F4C00260850 /* Utilities */,
+				DC4848402BF39E5B006B2EE5 /* Navigation */,
 				DC6F4E752BF28F3C00260850 /* Resources */,
 				DC6F4E512BF28D1800260850 /* Preview Content */,
 			);
@@ -215,7 +290,8 @@
 		DC6F4E772BF28F5200260850 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				DC6F4E4B2BF28D1700260850 /* PowerGamesApp.swift */,
+				DC4848522BF3A282006B2EE5 /* AppDelegate.swift */,
+				DC4848552BF3A80E006B2EE5 /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -224,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				DC6F4E792BF2945500260850 /* Home */,
+				DC48483E2BF39486006B2EE5 /* Details */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -634,16 +711,21 @@
 				DC6F4EB52BF2B12400260850 /* HomeViewModel.swift in Sources */,
 				DC48483D2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift in Sources */,
 				DC6F4EB82BF2B14200260850 /* BaseViewModel.swift in Sources */,
+				DC4848532BF3A282006B2EE5 /* AppDelegate.swift in Sources */,
 				DC6F4EA72BF298E700260850 /* GiveawaysResponse.swift in Sources */,
 				DC6F4EB32BF2B0EC00260850 /* HeaderView.swift in Sources */,
 				DC6F4EA32BF2986000260850 /* HomeRemoteServiceContract.swift in Sources */,
 				DC6F4F0F2BF3094A00260850 /* CarouselView.swift in Sources */,
+				DC4848442BF39EA3006B2EE5 /* UINavigationController+View.swift in Sources */,
 				DC6F4E922BF2967E00260850 /* HTTPHeaders.swift in Sources */,
+				DC4848492BF39F41006B2EE5 /* Array+Helpers.swift in Sources */,
 				DC6F4ED02BF2C84100260850 /* View+Helpers.swift in Sources */,
 				DC6F4ED82BF2CBB300260850 /* UIApplication+Helpers.swift in Sources */,
 				DC6F4EBE2BF2B19600260850 /* ViewModelState.swift in Sources */,
+				DC4848462BF39ED6006B2EE5 /* UINavigationController+Environment.swift in Sources */,
 				DC6F4EBB2BF2B16C00260850 /* DisposableObject.swift in Sources */,
 				DC6F4E872BF294E200260850 /* NetworkConstants.swift in Sources */,
+				DC48484B2BF39F7E006B2EE5 /* PresentationStyle.swift in Sources */,
 				DC6F4EC92BF2C08900260850 /* GameListCell.swift in Sources */,
 				DC6F4E892BF2952D00260850 /* APIConstants.swift in Sources */,
 				DC6F4EB02BF2AF7500260850 /* HomeView.swift in Sources */,
@@ -651,14 +733,18 @@
 				DC6F4E902BF2966A00260850 /* HTTPMethod.swift in Sources */,
 				DC6F4E8D2BF2960000260850 /* String+Helpers.swift in Sources */,
 				DC6F4ECE2BF2C51700260850 /* GiveawayGameData.swift in Sources */,
+				DC4848512BF3A1E9006B2EE5 /* MainRouter.swift in Sources */,
+				DC48484D2BF3A178006B2EE5 /* Router.swift in Sources */,
+				DC4848422BF39E72006B2EE5 /* UINavigationController+Helpers.swift in Sources */,
+				DC4848562BF3A80E006B2EE5 /* SceneDelegate.swift in Sources */,
 				DC6F4E962BF296D900260850 /* ContentType.swift in Sources */,
 				DC6F4EA92BF29C8600260850 /* HomeRepository.swift in Sources */,
 				DC6F4EC42BF2B23800260850 /* FetchGivewaysGamesUseCaseContract.swift in Sources */,
 				DC6F4EAC2BF29CCF00260850 /* HomeRepositoryContract.swift in Sources */,
-				DC6F4E4C2BF28D1700260850 /* PowerGamesApp.swift in Sources */,
 				DC6F4E842BF2949F00260850 /* APIBuilder.swift in Sources */,
 				DC6F4EC12BF2B21D00260850 /* FetchGivewaysGamesUseCase.swift in Sources */,
 				DC6F4E982BF2975B00260850 /* APIServiceContract.swift in Sources */,
+				DC4848582BF3AC76006B2EE5 /* HomeRouter.swift in Sources */,
 				DC6F4E9D2BF297E900260850 /* HomeRemoteService.swift in Sources */,
 				DC6F4E9A2BF2977500260850 /* APIService.swift in Sources */,
 				DC6F4ECC2BF2C0CA00260850 /* AsyncImage.swift in Sources */,
@@ -829,7 +915,7 @@
 				DEVELOPMENT_TEAM = MLM8YK22VB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = PowerGames/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -859,7 +945,7 @@
 				DEVELOPMENT_TEAM = MLM8YK22VB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = PowerGames/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

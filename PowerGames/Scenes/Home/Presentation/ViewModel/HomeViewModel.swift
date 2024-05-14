@@ -8,15 +8,28 @@
 import Combine
 
 final class HomeViewModel: BaseViewModel, ObservableObject {
+    private let router: HomeRouterProtocol
     private let useCase: FetchGivewaysGamesUseCaseContract
 
     @Published var games: [GiveawayGameData] = []
 
-    init(useCase: FetchGivewaysGamesUseCaseContract = FetchGivewaysGamesUseCase()) {
+    init(
+        router: HomeRouterProtocol = HomeRouter.shared,
+        useCase: FetchGivewaysGamesUseCaseContract = FetchGivewaysGamesUseCase()
+    ) {
+        self.router = router
         self.useCase = useCase
 
         super.init()
         onLoad()
+    }
+}
+
+// MARK: - Input Methods
+
+extension HomeViewModel {
+    func onPressGame(data: GiveawayGameData) {
+        router.openGameDetailsView(using: data)
     }
 }
 
