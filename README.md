@@ -1,7 +1,7 @@
 
 # Power Games
 
-A demo app that displays giveaways games using https://www.gamerpower.com/ API.
+A demo app that displays giveaways games using [gamerpower](https://www.gamerpower.com/) API.
 
     
 ## Consist Of
