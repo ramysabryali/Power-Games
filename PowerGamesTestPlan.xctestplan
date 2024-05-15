@@ -1,23 +1,18 @@
 {
   "configurations" : [
     {
-      "id" : "F276CF7A-79DE-49FB-A9A4-FE60FB55D546",
-      "name" : "Test Scheme Action",
+      "id" : "2E441864-9769-47A4-8D62-D2C0EDCCA6EB",
+      "name" : "Configuration 1",
       "options" : {
 
       }
     }
   ],
   "defaultOptions" : {
-    "targetForVariableExpansion" : {
-      "containerPath" : "container:PowerGames.xcodeproj",
-      "identifier" : "DC6F4E472BF28D1700260850",
-      "name" : "PowerGames"
-    }
+
   },
   "testTargets" : [
     {
-      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:PowerGames.xcodeproj",
         "identifier" : "DC48486F2BF42697006B2EE5",

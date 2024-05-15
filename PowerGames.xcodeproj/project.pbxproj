@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC14F5962BF52ACB0023908E /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F5952BF52ACB0023908E /* MockData.swift */; };
+		DC14F59C2BF52CF80023908E /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F59B2BF52CF80023908E /* MockAPIService.swift */; };
+		DC14F59E2BF52E470023908E /* MockHomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F59D2BF52E470023908E /* MockHomeRepository.swift */; };
+		DC14F5A12BF52F4D0023908E /* HomeRemoteServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F5A02BF52F4D0023908E /* HomeRemoteServiceTests.swift */; };
+		DC14F5A42BF533B50023908E /* giveaways-list-valid-response.json in Resources */ = {isa = PBXBuildFile; fileRef = DC14F5A32BF533B50023908E /* giveaways-list-valid-response.json */; };
+		DC14F5A62BF534270023908E /* HomeRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F5A52BF534270023908E /* HomeRepositoryTests.swift */; };
+		DC14F5A82BF534B80023908E /* MockHomeRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F5A72BF534B80023908E /* MockHomeRemoteService.swift */; };
+		DC14F5AB2BF536620023908E /* FetchGivewaysGamesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F5AA2BF536620023908E /* FetchGivewaysGamesUseCaseTests.swift */; };
+		DC14F5AE2BF537990023908E /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F5AD2BF537990023908E /* HomeViewModelTests.swift */; };
+		DC14F5B02BF537F50023908E /* MockRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F5AF2BF537F50023908E /* MockRouter.swift */; };
+		DC14F5B22BF5384D0023908E /* MockFetchGivewaysGamesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F5B12BF5384D0023908E /* MockFetchGivewaysGamesUseCase.swift */; };
+		DC14F5B72BF542DE0023908E /* GiveawayDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14F5B62BF542DE0023908E /* GiveawayDetailsViewModelTests.swift */; };
 		DC48483D2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48483C2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift */; };
 		DC4848422BF39E72006B2EE5 /* UINavigationController+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848412BF39E72006B2EE5 /* UINavigationController+Helpers.swift */; };
 		DC4848442BF39EA3006B2EE5 /* UINavigationController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848432BF39EA3006B2EE5 /* UINavigationController+View.swift */; };
@@ -23,7 +35,6 @@
 		DC4848642BF40F8E006B2EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4848632BF40F8E006B2EE5 /* LaunchScreen.storyboard */; };
 		DC4848672BF41F63006B2EE5 /* PGSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848662BF41F63006B2EE5 /* PGSegmentedView.swift */; };
 		DC48486A2BF41F8F006B2EE5 /* GiveawayPlatforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848692BF41F8F006B2EE5 /* GiveawayPlatforms.swift */; };
-		DC48487E2BF42722006B2EE5 /* HomeRemoteServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48487D2BF42722006B2EE5 /* HomeRemoteServiceTests.swift */; };
 		DC6F4E502BF28D1800260850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E4F2BF28D1800260850 /* Assets.xcassets */; };
 		DC6F4E532BF28D1800260850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */; };
 		DC6F4E842BF2949F00260850 /* APIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E832BF2949F00260850 /* APIBuilder.swift */; };
@@ -71,6 +82,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC14F5952BF52ACB0023908E /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		DC14F59B2BF52CF80023908E /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		DC14F59D2BF52E470023908E /* MockHomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeRepository.swift; sourceTree = "<group>"; };
+		DC14F5A02BF52F4D0023908E /* HomeRemoteServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteServiceTests.swift; sourceTree = "<group>"; };
+		DC14F5A22BF531F80023908E /* PowerGamesTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PowerGamesTestPlan.xctestplan; sourceTree = "<group>"; };
+		DC14F5A32BF533B50023908E /* giveaways-list-valid-response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "giveaways-list-valid-response.json"; sourceTree = "<group>"; };
+		DC14F5A52BF534270023908E /* HomeRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryTests.swift; sourceTree = "<group>"; };
+		DC14F5A72BF534B80023908E /* MockHomeRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeRemoteService.swift; sourceTree = "<group>"; };
+		DC14F5AA2BF536620023908E /* FetchGivewaysGamesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchGivewaysGamesUseCaseTests.swift; sourceTree = "<group>"; };
+		DC14F5AD2BF537990023908E /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		DC14F5AF2BF537F50023908E /* MockRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRouter.swift; sourceTree = "<group>"; };
+		DC14F5B12BF5384D0023908E /* MockFetchGivewaysGamesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFetchGivewaysGamesUseCase.swift; sourceTree = "<group>"; };
+		DC14F5B62BF542DE0023908E /* GiveawayDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		DC48483C2BF38D34006B2EE5 /* HomeCarouseCellCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCarouseCellCardView.swift; sourceTree = "<group>"; };
 		DC4848412BF39E72006B2EE5 /* UINavigationController+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Helpers.swift"; sourceTree = "<group>"; };
 		DC4848432BF39EA3006B2EE5 /* UINavigationController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+View.swift"; sourceTree = "<group>"; };
@@ -90,8 +114,6 @@
 		DC4848692BF41F8F006B2EE5 /* GiveawayPlatforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayPlatforms.swift; sourceTree = "<group>"; };
 		DC4848702BF42697006B2EE5 /* PowerGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC48487C2BF42722006B2EE5 /* PowerGamesTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PowerGamesTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		DC48487D2BF42722006B2EE5 /* HomeRemoteServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeRemoteServiceTests.swift; path = PowerGames/Scenes/Home/Presentation/Helpers/HomeRemoteServiceTests.swift; sourceTree = SOURCE_ROOT; };
-		DC48487F2BF42AD5006B2EE5 /* PowerGames.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PowerGames.xctestplan; sourceTree = "<group>"; };
 		DC6F4E482BF28D1700260850 /* Power Games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Games.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F4E4F2BF28D1800260850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -147,6 +169,83 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC14F5942BF52AB30023908E /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F5952BF52ACB0023908E /* MockData.swift */,
+				DC14F5972BF52B560023908E /* MockResponses */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		DC14F5972BF52B560023908E /* MockResponses */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F5A32BF533B50023908E /* giveaways-list-valid-response.json */,
+			);
+			path = MockResponses;
+			sourceTree = "<group>";
+		};
+		DC14F59A2BF52CC40023908E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F59D2BF52E470023908E /* MockHomeRepository.swift */,
+				DC14F5A72BF534B80023908E /* MockHomeRemoteService.swift */,
+				DC14F5B12BF5384D0023908E /* MockFetchGivewaysGamesUseCase.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		DC14F59F2BF52F2B0023908E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F5A02BF52F4D0023908E /* HomeRemoteServiceTests.swift */,
+				DC14F5A52BF534270023908E /* HomeRepositoryTests.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DC14F5A92BF5364C0023908E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F5AA2BF536620023908E /* FetchGivewaysGamesUseCaseTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DC14F5AC2BF5377D0023908E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F5AD2BF537990023908E /* HomeViewModelTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DC14F5B32BF542860023908E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F5AF2BF537F50023908E /* MockRouter.swift */,
+				DC14F59B2BF52CF80023908E /* MockAPIService.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		DC14F5B42BF542BB0023908E /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F5B52BF542C70023908E /* Presentation */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		DC14F5B52BF542C70023908E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F5B62BF542DE0023908E /* GiveawayDetailsViewModelTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		DC48483E2BF39486006B2EE5 /* Details */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,8 +353,9 @@
 		DC4848712BF42697006B2EE5 /* PowerGamesTests */ = {
 			isa = PBXGroup;
 			children = (
-				DC48487F2BF42AD5006B2EE5 /* PowerGames.xctestplan */,
 				DC48487C2BF42722006B2EE5 /* PowerGamesTests-Bridging-Header.h */,
+				DC14F5942BF52AB30023908E /* MockData */,
+				DC14F5B32BF542860023908E /* Shared */,
 				DC4848792BF426F1006B2EE5 /* Scenes */,
 			);
 			path = PowerGamesTests;
@@ -265,6 +365,7 @@
 			isa = PBXGroup;
 			children = (
 				DC48487A2BF426F5006B2EE5 /* Home */,
+				DC14F5B42BF542BB0023908E /* Details */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -272,22 +373,18 @@
 		DC48487A2BF426F5006B2EE5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DC48487B2BF426FA006B2EE5 /* RemoteService */,
+				DC14F59A2BF52CC40023908E /* Mocks */,
+				DC14F59F2BF52F2B0023908E /* Data */,
+				DC14F5A92BF5364C0023908E /* Domain */,
+				DC14F5AC2BF5377D0023908E /* Presentation */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		DC48487B2BF426FA006B2EE5 /* RemoteService */ = {
-			isa = PBXGroup;
-			children = (
-				DC48487D2BF42722006B2EE5 /* HomeRemoteServiceTests.swift */,
-			);
-			path = RemoteService;
 			sourceTree = "<group>";
 		};
 		DC6F4E3F2BF28D1700260850 = {
 			isa = PBXGroup;
 			children = (
+				DC14F5A22BF531F80023908E /* PowerGamesTestPlan.xctestplan */,
 				DC4848592BF3AECF006B2EE5 /* Configurations */,
 				DC6F4E4A2BF28D1700260850 /* PowerGames */,
 				DC4848712BF42697006B2EE5 /* PowerGamesTests */,
@@ -720,6 +817,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC14F5A42BF533B50023908E /* giveaways-list-valid-response.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,7 +838,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC48487E2BF42722006B2EE5 /* HomeRemoteServiceTests.swift in Sources */,
+				DC14F59C2BF52CF80023908E /* MockAPIService.swift in Sources */,
+				DC14F5B22BF5384D0023908E /* MockFetchGivewaysGamesUseCase.swift in Sources */,
+				DC14F59E2BF52E470023908E /* MockHomeRepository.swift in Sources */,
+				DC14F5B72BF542DE0023908E /* GiveawayDetailsViewModelTests.swift in Sources */,
+				DC14F5A62BF534270023908E /* HomeRepositoryTests.swift in Sources */,
+				DC14F5B02BF537F50023908E /* MockRouter.swift in Sources */,
+				DC14F5AE2BF537990023908E /* HomeViewModelTests.swift in Sources */,
+				DC14F5962BF52ACB0023908E /* MockData.swift in Sources */,
+				DC14F5A82BF534B80023908E /* MockHomeRemoteService.swift in Sources */,
+				DC14F5A12BF52F4D0023908E /* HomeRemoteServiceTests.swift in Sources */,
+				DC14F5AB2BF536620023908E /* FetchGivewaysGamesUseCaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
