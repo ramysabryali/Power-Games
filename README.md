@@ -3,6 +3,9 @@
 
 A demo app that displays giveaways games using [gamerpower](https://www.gamerpower.com/) API.
 
+<div align="left">
+  <a href="https://www.youtube.com/watch?v=AyagW_uFv-s"><img src="https://img.youtube.com/vi/AyagW_uFv-s/0.jpg" alt="IMAGE ALT TEXT"></a>
+</div>
     
 ## Consist Of
 - giveaways list screen:
@@ -13,7 +16,7 @@ A demo app that displays giveaways games using [gamerpower](https://www.gamerpow
 <img width="250" alt="image" src="https://github.com/ramyaimansabry/Power-Games/assets/17670361/fef90e84-29f0-476e-8459-04c5d7d59772">
 <img width="250" alt="image" src="https://github.com/ramyaimansabry/Power-Games/assets/17670361/52bcb252-6c81-46ef-80f5-a19c2d2de871">
 
-    
+
 ## Tech Stack
 - SwiftUI.
 - Combine.
