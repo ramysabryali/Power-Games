@@ -23,11 +23,9 @@
 		DC4848642BF40F8E006B2EE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC4848632BF40F8E006B2EE5 /* LaunchScreen.storyboard */; };
 		DC4848672BF41F63006B2EE5 /* PGSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848662BF41F63006B2EE5 /* PGSegmentedView.swift */; };
 		DC48486A2BF41F8F006B2EE5 /* GiveawayPlatforms.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4848692BF41F8F006B2EE5 /* GiveawayPlatforms.swift */; };
+		DC48487E2BF42722006B2EE5 /* HomeRemoteServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC48487D2BF42722006B2EE5 /* HomeRemoteServiceTests.swift */; };
 		DC6F4E502BF28D1800260850 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E4F2BF28D1800260850 /* Assets.xcassets */; };
 		DC6F4E532BF28D1800260850 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */; };
-		DC6F4E5D2BF28D1800260850 /* PowerGamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E5C2BF28D1800260850 /* PowerGamesTests.swift */; };
-		DC6F4E672BF28D1800260850 /* PowerGamesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E662BF28D1800260850 /* PowerGamesUITests.swift */; };
-		DC6F4E692BF28D1800260850 /* PowerGamesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E682BF28D1800260850 /* PowerGamesUITestsLaunchTests.swift */; };
 		DC6F4E842BF2949F00260850 /* APIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E832BF2949F00260850 /* APIBuilder.swift */; };
 		DC6F4E872BF294E200260850 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E862BF294E200260850 /* NetworkConstants.swift */; };
 		DC6F4E892BF2952D00260850 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F4E882BF2952D00260850 /* APIConstants.swift */; };
@@ -63,14 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DC6F4E592BF28D1800260850 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DC6F4E402BF28D1700260850 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DC6F4E472BF28D1700260850;
-			remoteInfo = PowerGames;
-		};
-		DC6F4E632BF28D1800260850 /* PBXContainerItemProxy */ = {
+		DC4848742BF42697006B2EE5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC6F4E402BF28D1700260850 /* Project object */;
 			proxyType = 1;
@@ -97,14 +88,13 @@
 		DC4848632BF40F8E006B2EE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC4848662BF41F63006B2EE5 /* PGSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PGSegmentedView.swift; sourceTree = "<group>"; };
 		DC4848692BF41F8F006B2EE5 /* GiveawayPlatforms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayPlatforms.swift; sourceTree = "<group>"; };
+		DC4848702BF42697006B2EE5 /* PowerGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC48487C2BF42722006B2EE5 /* PowerGamesTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PowerGamesTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		DC48487D2BF42722006B2EE5 /* HomeRemoteServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeRemoteServiceTests.swift; path = PowerGames/Scenes/Home/Presentation/Helpers/HomeRemoteServiceTests.swift; sourceTree = SOURCE_ROOT; };
+		DC48487F2BF42AD5006B2EE5 /* PowerGames.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = PowerGames.xctestplan; sourceTree = "<group>"; };
 		DC6F4E482BF28D1700260850 /* Power Games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Games.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F4E4F2BF28D1800260850 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DC6F4E582BF28D1800260850 /* PowerGamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerGamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC6F4E5C2BF28D1800260850 /* PowerGamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerGamesTests.swift; sourceTree = "<group>"; };
-		DC6F4E622BF28D1800260850 /* PowerGamesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PowerGamesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC6F4E662BF28D1800260850 /* PowerGamesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerGamesUITests.swift; sourceTree = "<group>"; };
-		DC6F4E682BF28D1800260850 /* PowerGamesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerGamesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DC6F4E832BF2949F00260850 /* APIBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIBuilder.swift; sourceTree = "<group>"; };
 		DC6F4E862BF294E200260850 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 		DC6F4E882BF2952D00260850 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
@@ -139,25 +129,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC48486D2BF42697006B2EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC6F4E452BF28D1700260850 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DC6F4EC72BF2B60800260850 /* Kingfisher in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC6F4E552BF28D1800260850 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC6F4E5F2BF28D1800260850 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,13 +251,46 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		DC4848712BF42697006B2EE5 /* PowerGamesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC48487F2BF42AD5006B2EE5 /* PowerGames.xctestplan */,
+				DC48487C2BF42722006B2EE5 /* PowerGamesTests-Bridging-Header.h */,
+				DC4848792BF426F1006B2EE5 /* Scenes */,
+			);
+			path = PowerGamesTests;
+			sourceTree = "<group>";
+		};
+		DC4848792BF426F1006B2EE5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DC48487A2BF426F5006B2EE5 /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DC48487A2BF426F5006B2EE5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DC48487B2BF426FA006B2EE5 /* RemoteService */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DC48487B2BF426FA006B2EE5 /* RemoteService */ = {
+			isa = PBXGroup;
+			children = (
+				DC48487D2BF42722006B2EE5 /* HomeRemoteServiceTests.swift */,
+			);
+			path = RemoteService;
+			sourceTree = "<group>";
+		};
 		DC6F4E3F2BF28D1700260850 = {
 			isa = PBXGroup;
 			children = (
 				DC4848592BF3AECF006B2EE5 /* Configurations */,
 				DC6F4E4A2BF28D1700260850 /* PowerGames */,
-				DC6F4E5B2BF28D1800260850 /* PowerGamesTests */,
-				DC6F4E652BF28D1800260850 /* PowerGamesUITests */,
+				DC4848712BF42697006B2EE5 /* PowerGamesTests */,
 				DC6F4E492BF28D1700260850 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -283,8 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				DC6F4E482BF28D1700260850 /* Power Games.app */,
-				DC6F4E582BF28D1800260850 /* PowerGamesTests.xctest */,
-				DC6F4E622BF28D1800260850 /* PowerGamesUITests.xctest */,
+				DC4848702BF42697006B2EE5 /* PowerGamesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,23 +323,6 @@
 				DC6F4E522BF28D1800260850 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		DC6F4E5B2BF28D1800260850 /* PowerGamesTests */ = {
-			isa = PBXGroup;
-			children = (
-				DC6F4E5C2BF28D1800260850 /* PowerGamesTests.swift */,
-			);
-			path = PowerGamesTests;
-			sourceTree = "<group>";
-		};
-		DC6F4E652BF28D1800260850 /* PowerGamesUITests */ = {
-			isa = PBXGroup;
-			children = (
-				DC6F4E662BF28D1800260850 /* PowerGamesUITests.swift */,
-				DC6F4E682BF28D1800260850 /* PowerGamesUITestsLaunchTests.swift */,
-			);
-			path = PowerGamesUITests;
 			sourceTree = "<group>";
 		};
 		DC6F4E752BF28F3C00260850 /* Resources */ = {
@@ -637,6 +635,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC48486F2BF42697006B2EE5 /* PowerGamesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC4848762BF42697006B2EE5 /* Build configuration list for PBXNativeTarget "PowerGamesTests" */;
+			buildPhases = (
+				DC48486C2BF42697006B2EE5 /* Sources */,
+				DC48486D2BF42697006B2EE5 /* Frameworks */,
+				DC48486E2BF42697006B2EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC4848752BF42697006B2EE5 /* PBXTargetDependency */,
+			);
+			name = PowerGamesTests;
+			productName = PowerGamesTests;
+			productReference = DC4848702BF42697006B2EE5 /* PowerGamesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DC6F4E472BF28D1700260850 /* PowerGames */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC6F4E6C2BF28D1800260850 /* Build configuration list for PBXNativeTarget "PowerGames" */;
@@ -657,42 +673,6 @@
 			productReference = DC6F4E482BF28D1700260850 /* Power Games.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DC6F4E572BF28D1800260850 /* PowerGamesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC6F4E6F2BF28D1800260850 /* Build configuration list for PBXNativeTarget "PowerGamesTests" */;
-			buildPhases = (
-				DC6F4E542BF28D1800260850 /* Sources */,
-				DC6F4E552BF28D1800260850 /* Frameworks */,
-				DC6F4E562BF28D1800260850 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DC6F4E5A2BF28D1800260850 /* PBXTargetDependency */,
-			);
-			name = PowerGamesTests;
-			productName = PowerGamesTests;
-			productReference = DC6F4E582BF28D1800260850 /* PowerGamesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DC6F4E612BF28D1800260850 /* PowerGamesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DC6F4E722BF28D1800260850 /* Build configuration list for PBXNativeTarget "PowerGamesUITests" */;
-			buildPhases = (
-				DC6F4E5E2BF28D1800260850 /* Sources */,
-				DC6F4E5F2BF28D1800260850 /* Frameworks */,
-				DC6F4E602BF28D1800260850 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DC6F4E642BF28D1800260850 /* PBXTargetDependency */,
-			);
-			name = PowerGamesUITests;
-			productName = PowerGamesUITests;
-			productReference = DC6F4E622BF28D1800260850 /* PowerGamesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -703,16 +683,13 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					DC48486F2BF42697006B2EE5 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+						TestTargetID = DC6F4E472BF28D1700260850;
+					};
 					DC6F4E472BF28D1700260850 = {
 						CreatedOnToolsVersion = 15.0;
-					};
-					DC6F4E572BF28D1800260850 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = DC6F4E472BF28D1700260850;
-					};
-					DC6F4E612BF28D1800260850 = {
-						CreatedOnToolsVersion = 15.0;
-						TestTargetID = DC6F4E472BF28D1700260850;
 					};
 				};
 			};
@@ -733,13 +710,19 @@
 			projectRoot = "";
 			targets = (
 				DC6F4E472BF28D1700260850 /* PowerGames */,
-				DC6F4E572BF28D1800260850 /* PowerGamesTests */,
-				DC6F4E612BF28D1800260850 /* PowerGamesUITests */,
+				DC48486F2BF42697006B2EE5 /* PowerGamesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC48486E2BF42697006B2EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC6F4E462BF28D1700260850 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -750,23 +733,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC6F4E562BF28D1800260850 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC6F4E602BF28D1800260850 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC48486C2BF42697006B2EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC48487E2BF42722006B2EE5 /* HomeRemoteServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC6F4E442BF28D1700260850 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -820,39 +797,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC6F4E542BF28D1800260850 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC6F4E5D2BF28D1800260850 /* PowerGamesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC6F4E5E2BF28D1800260850 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DC6F4E692BF28D1800260850 /* PowerGamesUITestsLaunchTests.swift in Sources */,
-				DC6F4E672BF28D1800260850 /* PowerGamesUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DC6F4E5A2BF28D1800260850 /* PBXTargetDependency */ = {
+		DC4848752BF42697006B2EE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DC6F4E472BF28D1700260850 /* PowerGames */;
-			targetProxy = DC6F4E592BF28D1800260850 /* PBXContainerItemProxy */;
-		};
-		DC6F4E642BF28D1800260850 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DC6F4E472BF28D1700260850 /* PowerGames */;
-			targetProxy = DC6F4E632BF28D1800260850 /* PBXContainerItemProxy */;
+			targetProxy = DC4848742BF42697006B2EE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		DC4848772BF42697006B2EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MLM8YK22VB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramysabry1996.PowerGamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "PowerGamesTests/PowerGamesTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Power Games.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Power Games";
+			};
+			name = Debug;
+		};
+		DC4848782BF42697006B2EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MLM8YK22VB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ramysabry1996.PowerGamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "PowerGamesTests/PowerGamesTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Power Games.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Power Games";
+			};
+			name = Release;
+		};
 		DC6F4E6A2BF28D1800260850 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1034,85 +1030,18 @@
 			};
 			name = Release;
 		};
-		DC6F4E702BF28D1800260850 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MLM8YK22VB;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramysabry1996.PowerGamesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PowerGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PowerGames";
-			};
-			name = Debug;
-		};
-		DC6F4E712BF28D1800260850 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MLM8YK22VB;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramysabry1996.PowerGamesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PowerGames.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PowerGames";
-			};
-			name = Release;
-		};
-		DC6F4E732BF28D1800260850 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MLM8YK22VB;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramysabry1996.PowerGamesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PowerGames;
-			};
-			name = Debug;
-		};
-		DC6F4E742BF28D1800260850 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = MLM8YK22VB;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramysabry1996.PowerGamesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PowerGames;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC4848762BF42697006B2EE5 /* Build configuration list for PBXNativeTarget "PowerGamesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC4848772BF42697006B2EE5 /* Debug */,
+				DC4848782BF42697006B2EE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DC6F4E432BF28D1700260850 /* Build configuration list for PBXProject "PowerGames" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1127,24 +1056,6 @@
 			buildConfigurations = (
 				DC6F4E6D2BF28D1800260850 /* Debug */,
 				DC6F4E6E2BF28D1800260850 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC6F4E6F2BF28D1800260850 /* Build configuration list for PBXNativeTarget "PowerGamesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC6F4E702BF28D1800260850 /* Debug */,
-				DC6F4E712BF28D1800260850 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC6F4E722BF28D1800260850 /* Build configuration list for PBXNativeTarget "PowerGamesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC6F4E732BF28D1800260850 /* Debug */,
-				DC6F4E742BF28D1800260850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
