@@ -12,6 +12,17 @@ struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
 
     var body: some View {
+        ZStack(alignment: .center) {
+            content
+            progressView
+        }
+    }
+}
+
+// MARK: - Private Properties
+
+private extension HomeView {
+    var content: some View {
         GeometryReader { geometry in
             ScrollView {
                 VStack(alignment: .center, spacing: 10) {
@@ -24,18 +35,12 @@ struct HomeView: View {
                             platformsFilterView
                             buildGamesList(using: geometry)
                         }
-                        progressView
                     }
                 } //: VStack
             } //: ScrollView
         } //: GeometryReader
-//        .onChange(of: viewModel.alertItem, perform: didSetAlert)
     }
-}
 
-// MARK: - Private Properties
-
-private extension HomeView {
     var titleView: some View {
         HStack {
             Text("Explore\nGames Giveaways")
@@ -50,10 +55,13 @@ private extension HomeView {
 
     var progressView: AnyView? {
         guard viewModel.state == .loading else { return nil }
-        return VStack {
-            Spacer()
+        return ZStack {
+            Color.black.opacity(0.5)
             ProgressView()
+                .scaleEffect(2)
+                .tint(.white)
         }
+        .ignoresSafeArea()
         .eraseToAnyView()
     }
 
@@ -89,8 +97,7 @@ private extension HomeView {
                 .font(.system(size: 20, weight: .medium))
         }
         .frame(height: 50)
-//        .opacity(viewModel.games.isEmpty ? 0 : 1)
-        .disabled(viewModel.state == .loading)
+        .opacity(viewModel.games.isEmpty ? 0 : 1)
     }
 }
 
