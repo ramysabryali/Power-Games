@@ -9,10 +9,8 @@ A demo app that displays giveaways games using https://www.gamerpower.com/ API.
   - Games carousel with 3D rotation effect.
   - Platform filter segment view.
   - Games cards list.
-<img width="250" alt="image" src="https://github.com/ramyaimansabry/Power-Games/assets/17670361/fef90e84-29f0-476e-8459-04c5d7d59772">
-
 - giveaway details screen
-
+<img width="250" alt="image" src="https://github.com/ramyaimansabry/Power-Games/assets/17670361/fef90e84-29f0-476e-8459-04c5d7d59772">
 <img width="250" alt="image" src="https://github.com/ramyaimansabry/Power-Games/assets/17670361/52bcb252-6c81-46ef-80f5-a19c2d2de871">
 
     
