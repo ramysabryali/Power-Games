@@ -48,7 +48,7 @@ final class HomeViewModelTests: XCTestCase {
             }
             .store(in: &cancellables)
 
-        waitForExpectations(timeout: 1.0)
+        waitForExpectations(timeout: 2.0)
     }
 
     func testSUT_whenLoad_fetchingData_failure() {

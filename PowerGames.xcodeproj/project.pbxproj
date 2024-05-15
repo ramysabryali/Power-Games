@@ -246,6 +246,14 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
+		DC14F5B82BF54D390023908E /* TestPlan */ = {
+			isa = PBXGroup;
+			children = (
+				DC14F5A22BF531F80023908E /* PowerGamesTestPlan.xctestplan */,
+			);
+			path = TestPlan;
+			sourceTree = "<group>";
+		};
 		DC48483E2BF39486006B2EE5 /* Details */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +313,7 @@
 		DC4848592BF3AECF006B2EE5 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
+				DC14F5B82BF54D390023908E /* TestPlan */,
 				DC48485A2BF3AED8006B2EE5 /* PList */,
 			);
 			path = Configurations;
@@ -384,7 +393,6 @@
 		DC6F4E3F2BF28D1700260850 = {
 			isa = PBXGroup;
 			children = (
-				DC14F5A22BF531F80023908E /* PowerGamesTestPlan.xctestplan */,
 				DC4848592BF3AECF006B2EE5 /* Configurations */,
 				DC6F4E4A2BF28D1700260850 /* PowerGames */,
 				DC4848712BF42697006B2EE5 /* PowerGamesTests */,
